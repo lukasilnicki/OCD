@@ -2,6 +2,7 @@ body
 {
 	font-family: 'Lato', sans-serif;
 	margin: 0 !important;
+	background: url("img/tło2.png");
 }
 
 header
@@ -120,19 +121,49 @@ a:visited
 	opacity: 0.8;
 }
 
+main
+{
+	width: 100%;
+}
 
+#powitanie
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	text-align: justify;
+	font-size: 17px;
+}
 
+#baza
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: justify;
+	font-size: 17px;
+}
 
+.obraz
+{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
 
 
 
 
 footer
 {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	background-color: #d9d9d9;
 	width: 100%;
+	padding-top: 1px;
 	height: 120px;
 	opacity: 0.75;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
