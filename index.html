@@ -9,15 +9,49 @@
 	
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="fonty/css/fontello.css" type="text/css" />
+	
+	<script src="jquery-3.3.1.min.js"></script>
+	
+	<script type="text/javascript">
+	
+		function hide()
+		{
+			$('#wstep').fadeOut(500);
+			$('#stolcad').fadeOut(500);
+			$('#szkolenia').fadeOut(500);
+		}
+		
+		function showonload()
+		{
+			document.getElementById('wstep').style.visibility = 'visible';
+			document.getElementById('stolcad').style.visibility = 'visible';
+			document.getElementById('szkolenia').style.visibility = 'visible';
+			$('#wstep').fadeIn(1000);
+			
+		}
+		
+		function showonload2()
+		{
+			$('#stolcad').fadeIn(1000);
+			$('#szkolenia').fadeIn(1000);
+		}
+		
+		</script>
 
 </head>
-<body>
-
+<body onload = "hide(); var k1=window.setTimeout('showonload();', 500); var k2=window.setTimeout('showonload2();', 1200);">
+	
 	<div class="container">
 	
-		<div class="select">
-			<div class="stolcad">
+		<div id="select">
+		
+			<div id="wstep">
+				PPHU OCD - kompleksowe wsparcie dla firm z branży stolarki otworowej
+			</div>
+			
+			<div id="stolcad">
 				<div class="sign1">
 					<div class="name">
 						<a href="#"><img src="img/drapacz.jpg"></a>
@@ -27,7 +61,7 @@
 				</div>	
 			</div>
 		
-			<div class="szkolenia">
+			<div id="szkolenia">
 				<div class="sign2">
 					<div class="name">
 						<a href="uslugi.html"><img src="img/doradztwo1.jpg"></a>

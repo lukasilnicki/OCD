@@ -27,17 +27,31 @@ a:visited
 	background-repeat: no-repeat;
 }
 
-.select
+#wstep
+{
+	visibility: hidden;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	font-size: 40px;
+	font-weight: 700;
+	border-bottom: solid 2px;
+}
+
+#select
 {
 	width: 100%;
-	height: 300px;
+	height: 600px;
 	margin-top: auto;
 	margin-bottom: auto;
 	text-align: center;
 }
 
-.stolcad
+#stolcad
 {
+	visibility: hidden;
 	display: inline-block;
 	width: 350px;
 	height: 250px;
@@ -47,8 +61,9 @@ a:visited
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 
-.szkolenia
+#szkolenia
 {
+	visibility: hidden;
 	display: inline-block;
 	width: auto;
 	height: auto;
@@ -107,9 +122,9 @@ footer
 	position: absolute;
 	bottom: 0;
 	background-color: #d9d9d9;
+	padding-bottom: 40px;
 	width: 100%;
-	height: 120px;
-	opacity: 0.75;
+	height: 50px;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -118,8 +133,8 @@ footer
 .contact
 {
 	width: 600px;
-	height: 40px;
-	margin-top: 30px;
+	height: 30px;
+	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -129,7 +144,6 @@ footer
 .copy
 {
 	width: 600px;
-	height: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;

@@ -10,10 +10,81 @@
 	<link rel="stylesheet" href="uslugi.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="fonty/css/fontello.css" type="text/css" />
-
+	
+	<script src="jquery-3.3.1.min.js"></script>
+	
+	<script type="text/javascript">
+	
+		function hide()
+		{
+			document.getElementById('baza').style.display = 'none';
+			document.getElementById('krajowyfundusz').style.display = 'none';
+			document.getElementById('ogolnie').style.display = 'none';
+			$('#powitanie').fadeOut(500);
+		}
+		
+		function showonload()
+		{
+			document.getElementById('powitanie').style.visibility = 'visible';
+			$('#powitanie').fadeIn(500);
+		}
+		
+		/* Funkcje dla div o BUR */
+		
+		function hideclick()
+		{
+			$('#ogolnie').fadeOut(200);
+			$('#krajowyfundusz').fadeOut(200);
+			$('#powitanie').fadeOut(200);
+			$('#baza').fadeOut(200);
+			setTimeout("show()", 200);
+		}
+		
+		function show()
+		{
+			document.getElementById('baza').style.visibility = 'visible';
+			$('#baza').fadeIn(200);
+			document.getElementById('namebur').style.opacity = '1';
+		}
+		
+		/* Funkcje dla div o KFS */
+		
+		function hideclickkfs()
+		{
+			$('#ogolnie').fadeOut(200);
+			$('#baza').fadeOut(200);
+			$('#powitanie').fadeOut(200);
+			$('#krajowyfundusz').fadeOut(200);
+			setTimeout("showkfs()", 200);
+		}
+		
+		function showkfs()
+		{
+			document.getElementById('krajowyfundusz').style.visibility = 'visible';
+			$('#krajowyfundusz').fadeIn(200);
+		}
+		
+		/* Funkcje dla div o szkoleniach */
+		
+		function hideclickgeneral()
+		{
+			$('#ogolnie').fadeOut(200);
+			$('#baza').fadeOut(200);
+			$('#powitanie').fadeOut(200);
+			$('#krajowyfundusz').fadeOut(200);
+			setTimeout("showgeneral()", 200);
+		}
+		
+		function showgeneral()
+		{
+			document.getElementById('ogolnie').style.visibility = 'visible';
+			$('#ogolnie').fadeIn(200);
+		}
+	
+	</script>
 
 </head>
-<body>
+<body onload = "hide(); var k2=window.setTimeout('showonload();', 500);">
 
 	<header>
 	
@@ -21,7 +92,7 @@
 			
 			<div class="menu">
 
-				<div class="szkolenie">
+				<div id="szkolenie" onclick = "var k4=window.setTimeout('hideclickgeneral();', 200);">
 					<div class="sign1">
 						<div class="name">
 							<a href="#"><img src="img/przeszkolenie11.png"></a>
@@ -33,9 +104,9 @@
 					</div>	
 				</div>
 			
-				<div class="bur">
+				<div id="bur" onclick = "var k1=window.setTimeout('hideclick();', 200);">
 					<div class="sign1">
-						<div class="name">
+						<div id="namebur">
 							<a href="#"><img src="img/dłonie.png"></a>
 					
 							<a class="link" href="#">Baza Usług Rozwojowych</a>
@@ -43,7 +114,7 @@
 					</div>
 				</div>
 				
-				<div class="kfs">
+				<div id="kfs" onclick = "var k3=window.setTimeout('hideclickkfs();', 200);">
 					<div class="sign1">
 						<div class="name">
 							<a href="#"><img src="img/formularz.png"></a>
@@ -61,6 +132,36 @@
 	
 	<main>
 		
+		<div id="powitanie">
+		
+			<p><b>Szanowni Państwo,</b></p>
+			
+			<p>zapraszam do zapoznania się z oferowanymi przeze mnie kompleksowymi usługami rozwojowymi w zakresie szeroko pojętego zarządzania produkcją w branży stolarki otworowej, w tym za pośrednictwem dedykowanych aplikacji komputerowych</p>
+			
+			<p>Posiadam kilkunastoletnie doświadczenie (od 1999 roku) we wdrażaniu programu Stolcad w firmach zajmujących się stolarką okienną. Takich wdrożeń na przestrzeni tych lat było ponad 800, zarówno przeprowadzane w Polsce, jak i za granicą - na Litwie, Łotwie, w Estonii, Ukrainie oraz kilkukrotnie w Czechach i Słowacji. Jednocześnie byłem podwykonawcą w kilkunastu projektach unijnych w zakresie innowacyjnych rozwiązań B2B, a obecnie oferuję również możliwość wsparcia za pośrednictwem Bazy Usług Rozwojowych (nabory ciągłe lub cykliczne) oraz Krajowego Funduszu Szkoleniowego (nabory coroczne).</p>
+			
+			<p style="text-align: right;">Andrzej Ilnicki</p>
+			
+			<div class="return">
+				<a href="index.html">Powrót do strony startowej</a>
+			</div>
+			
+		</div>
+		
+		<div id="ogolnie">
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et laoreet justo, id efficitur turpis. Vestibulum faucibus dui ac nisi pellentesque varius a eget augue. Duis nec nisi venenatis, aliquet mauris non, fringilla diam. Praesent bibendum in libero finibus pulvinar. Donec posuere mattis urna, eu vehicula velit tempor et. Maecenas mollis tempus dui non maximus. Integer nec leo scelerisque, posuere arcu ut, dignissim enim.</p>
+
+			<p>Fusce in ipsum id sem consectetur pharetra quis et magna. Etiam scelerisque magna at enim malesuada, vel bibendum dui molestie. Suspendisse potenti. Nullam efficitur augue at justo hendrerit interdum. In tellus mi, mollis sit amet ultrices vitae, congue id massa. Ut id dictum purus. In porta felis ut odio commodo tempus eu eget risus. Nunc dolor nunc, molestie ac purus at, luctus luctus nisi. Aliquam erat volutpat. Ut sollicitudin pretium tellus, id feugiat risus ultrices sit amet. Vivamus sed suscipit ligula.</p>
+
+			<p>Proin efficitur erat non efficitur aliquam. Sed risus ante, dictum vel tincidunt non, ultricies id leo. Sed leo tellus, euismod sit amet nibh a, dignissim faucibus erat. Sed ut efficitur lacus. Cras laoreet dapibus ligula nec pretium. Curabitur aliquet, odio id rutrum ornare, lorem ipsum hendrerit felis, et pharetra eros sem sit amet elit. Maecenas id odio metus.</p>
+			
+			<div class="return">
+				<a href="index.html">Powrót do strony startowej</a>
+			</div>
+		
+		</div>
+		
 		<div id="baza">
 			<div class="obraz">
 				<a href="https://uslugirozwojowe.parp.gov.pl/" target="_blank"><img src="img/bur.png" alt="Baza Usług Rozwojowych" align="left" /></a>
@@ -74,9 +175,29 @@
 			
 			<p>W ramach usługi rozwojowej staram się maksymalnie ułatwić Państwu proces uzyskiwania dofinansowania poprzez przygotowanie niezbędnej dokumentacji, bieżący kontakt z danym operatorem oraz rozliczenie projektu. Dzięki temu mogą się Państwo skoncentrować na pozyskiwaniu nowej wiedzy w trakcie realizowanych usług szkoleniowo-doradczych.</p>
 			
-			<p>Zapraszam do odwiedzenia <a href="https://uslugirozwojowe.parp.gov.pl/podmioty/view?id=10568" target="_blank" style="color: #737373;"><b>profilu firmy PPHU OCD w Bazie Usług Rozwojowych</b></a> oraz do kontaktu w celu omówienia szczegółów dotyczących warunków dofinansowania oraz trwających naborów w Państwa regionie.</p>
+			<p>Zapraszam do odwiedzenia <a href="https://uslugirozwojowe.parp.gov.pl/podmioty/view?id=10568" target="_blank" style="color: #e65c00;"><b><u>profilu firmy PPHU OCD w Bazie Usług Rozwojowych</u></b></a> oraz do kontaktu w celu omówienia szczegółów dotyczących warunków dofinansowania oraz trwających naborów w Państwa regionie.</p>
+			
+			<div class="return">
+				<a href="index.html">Powrót do strony startowej</a>
+			</div>
 
 		</div>
+		
+		<div id="krajowyfundusz">
+			
+			<div class="obraz">
+				<a href="http://psz.praca.gov.pl/-/55453-krajowy-fundusz-szkoleniowy" target="_blank"><img src="img/kfs-logo.png" alt="Baza Usług Rozwojowych" align="left" /></a>
+			</div>
+			
+			<p>Krajowy Fundusz Szkoleniowy stanowi wydzieloną cześć Funduszu Pracy, przeznaczoną na dofinansowanie kształcenia ustawicznego pracowników i pracodawców. Pracodawca starający się o dofinansowanie kosztów kształcenia ustawicznego musi wnieść wkład własny w wysokości 20% kosztów, zaś 80% kosztów kształcenia ustawicznego sfinansuje KFS. W przypadku mikroprzedsiębiorstwa, tj. pracodawcy zatrudniającego do 10 osób, ze środków KFS można sfinansować 100% kosztów kształcenia ustawicznego. Jednak całość dofinansowania środkami KFS nie może przekroczyć wysokości 300% przeciętnego wynagrodzenia w danym roku na jednego uczestnika.</p>
+			
+			<p>W ramach dotychczasowych edycji Krajowego Funduszu Szkoleniowego zrealizowałem razem z moimi klientami ok. 50 projektów na terenie całej Polski. Jest to narzędzie umożliwiające skuteczną amortyzację kosztów związanych z kształceniem, stąd też KFS stanowi element mojej oferty. Oczywiście z uwagi na pewien stopień skomplikowania dokumentacji aplikacyjnej oferuję swoją pomoc przy przygotowaniu wniosku o dofinansowanie oraz wszystkich załączników, angażując klienta w proces ubiegania się o środki w jak najmniejszym stopniu.</p>
+			
+			<p> Krajowy Fundusz Szkoleniowy jest uruchamiany w poszczególnych Powiatowych Urzędach Pracy z reguły w połowie stycznia każdego roku, dlatego jeśli są Państwo zainteresowani tego typu formą dofinansowania, to zapraszam do kontaktu przed tym terminem, w celu efektywnego zaplanowania usługi oraz przygotowania niezbędnych dokumentów i informacji.</p>
+			
+			<div class="return">
+				<a href="index.html">Powrót do strony startowej</a>
+			</div>
 		
 		</div>
 	
