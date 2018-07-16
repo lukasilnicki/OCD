@@ -1,88 +1,86 @@
 <!DOCTYPE HTML>
 <html lang="pl">
 <head> 
-	<meta charset="utf-8" />
-	<title>PPHU OCD</title>
-	<meta name="description" content="Zapraszam do zapoznania się z ofertą firmy PPHU OCD" />
-	<meta name="keywords" content="OCD, Andrzej Ilnicki, stolarka otworowa, Stolcad, okna aluminiowe, okna drewniane, usługi rozwojowe, Baza Usług Rozwojowych, Krajowy Fundusz Szkoleniowy, KFS, szkolenia, doradztwo" /> 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>PPHU OCD</title>
+    <meta name="description" content="Zapraszam do zapoznania się z ofertą firmy PPHU OCD" />
+    <meta name="keywords" content="OCD, Andrzej Ilnicki, stolarka otworowa, Stolcad, okna aluminiowe, okna drewniane, usługi rozwojowe, Baza Usług Rozwojowych, Krajowy Fundusz Szkoleniowy, KFS, szkolenia, doradztwo" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="fonty/css/fontello.css" type="text/css" />
+
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
 	
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="fonty/css/fontello.css" type="text/css" />
-	
-	<script src="jquery-3.3.1.min.js"></script>
-	
-	<script type="text/javascript">
-	
-		function hide()
-		{
-			$('#wstep').fadeOut(500);
-			$('#stolcad').fadeOut(500);
-			$('#szkolenia').fadeOut(500);
-		}
+    function hide()
+    {
+        $('#wstep').fadeOut(500);
+        $('#stolcad').fadeOut(500);
+        $('#szkolenia').fadeOut(500);
+    }
 		
-		function showonload()
-		{
-			document.getElementById('wstep').style.visibility = 'visible';
-			document.getElementById('stolcad').style.visibility = 'visible';
-			document.getElementById('szkolenia').style.visibility = 'visible';
-			$('#wstep').fadeIn(1000);
-			
-		}
+    function showonload()
+    {
+        document.getElementById('wstep').style.visibility = 'visible';
+        document.getElementById('stolcad').style.visibility = 'visible';
+        document.getElementById('szkolenia').style.visibility = 'visible';
+        $('#wstep').fadeIn(1000);			
+    }
 		
-		function showonload2()
-		{
-			$('#stolcad').fadeIn(1000);
-			$('#szkolenia').fadeIn(1000);
-		}
+    function showonload2()
+    {
+        $('#stolcad').fadeIn(1000);
+        $('#szkolenia').fadeIn(1000);		
+    }
 		
-		</script>
+    </script>
 
 </head>
 <body onload = "hide(); var k1=window.setTimeout('showonload();', 500); var k2=window.setTimeout('showonload2();', 1200);">
 	
-	<div class="container">
-	
-		<div id="select">
-		
-			<div id="wstep">
-				PPHU OCD - kompleksowe wsparcie dla firm z branży stolarki otworowej
-			</div>
-			
-			<div id="stolcad">
-				<div class="sign1">
-					<div class="name">
-						<a href="#"><img src="img/drapacz.jpg"></a>
-					
-						<a class="link" href="#">Technologie dla stolarki otworowej</a>
-					</div>
-				</div>	
-			</div>
-		
-			<div id="szkolenia">
-				<div class="sign2">
-					<div class="name">
-						<a href="uslugi.html"><img src="img/doradztwo1.jpg"></a>
-					
-						<a class="link" href="uslugi.html">Usługi rozwojowe</a>
-					</div>
-				</div>
-			
-			</div>
-		</div>
-	
-	</div>
+    <div class="container">
 
-	<footer>
-		<div class="contact">
-			<i class="icon-phone" ></i>+48 512 225 219 | <i class="icon-mail-alt"></i>ocd@poczta.onet.pl
-		</div>
-		
-		<div class="copy">
-			PPHU OCD Andrzej Ilnicki 2018 &copy Wszystkie prawa zastrzeżone
-		</div>
-	</footer>
+        <div id="select">
+
+            <div id="wstep">
+                    PPHU OCD - kompleksowe wsparcie dla firm z branży stolarki otworowej
+            </div>
+
+            <div id="stolcad">
+                <div class="sign1">
+                    <div class="name">
+                        <a href="technologie.html"><img src="img/drapacz.jpg"></a>
+
+                        <a class="link" href="#">Technologie dla stolarki otworowej</a>
+                    </div>
+                </div>	
+            </div>
+
+            <div id="szkolenia">
+                <div class="sign2">
+                    <div class="name">
+                        <a href="uslugi.html"><img src="img/doradztwo1.jpg"></a>
+
+                        <a class="link" href="uslugi.html">Usługi rozwojowe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="contact">
+            <i class="icon-phone" ></i>+48 512 225 219 | <i class="icon-mail-alt"></i>ocd@poczta.onet.pl
+        </div>
+
+        <div class="copy">
+            PPHU OCD Andrzej Ilnicki 2018 &copy Wszystkie prawa zastrzeżone
+        </div>
+    </footer>
 </body>
 </html>
