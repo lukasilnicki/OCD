@@ -12,7 +12,6 @@ body
     background-size: cover;
     background-position: 100%;
     position: relative;
-    top: 100px;
 }
 
 .parallax_image_first
@@ -22,7 +21,7 @@ body
 
 h1
 {
-    margin-top: -150px;
+   margin-top: -200px;
 }
 
 .center
@@ -30,7 +29,8 @@ h1
     width: 700px;
     font-size: 20px;
     position: absolute;
-    top: 40%;
+    top: 220px;
+    padding-top: 100px;
     left: 50%;
     margin-left: -350px;
     text-align: center;
@@ -49,12 +49,12 @@ h1
 .picture1
 {
     float: left;
-    background-image: url("img/sadowski_soft.png");
+    background-image: url("img/sadowski_soft.png"); /* Źródło: http://www.stolcad.pl/ */
     background-repeat: no-repeat;
     background-size: cover;
     width: 400px;
     height: 500px;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 .center2
@@ -63,9 +63,67 @@ h1
     float: left;
     color: #000;
     width: 400px;
-    margin-top: 180px;
+    margin-top: 140px;
     margin-left: 200px;
     text-align: center;
+}
+
+/*----------------------MENU---------------------- */
+
+menu
+{
+    padding: 0;
+}
+
+.menuContainer
+{
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+ul
+{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul > li
+{
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-right: solid 1px;
+}
+
+ul > li:first-child
+{
+    padding-left: 0px;
+}
+
+ul > li:nth-child(3)
+{
+    border-right: none;
+    padding-right: 0px;
+}
+
+ul > li a
+{
+    text-decoration: none;
+    color: #000;
+    padding-left: 30px;
+    padding-right: 20px;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+ul > li a:hover
+{
+    background-color: #d9d9d9;
 }
 
 footer
@@ -99,4 +157,31 @@ footer
     margin-right: auto;
     text-align: center;
     font-weight: 600;
+}
+
+.sticky
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.stickyStyle
+{
+    background-color: #000;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.stickyStyleList
+{
+    color: #fff;
+}
+
+.stickyStyleList:hover
+{
+    background-color: #fff;
+    color: #000;
 }
