@@ -1,11 +1,9 @@
-body
-{
+body{
     font-family: 'Lato', sans-serif;
     margin: 0 !important;
 }
 
-.parallax_section
-{
+.parallax_section{
     height: 700px;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,18 +12,15 @@ body
     position: relative;
 }
 
-.parallax_image_first
-{
+.parallax_image_first{
     background-image: url("img/technologie1.jpg");
 }
 
-h1
-{
+h1{
    margin-top: -200px;
 }
 
-.center
-{
+.center{
     width: 700px;
     font-size: 20px;
     position: absolute;
@@ -38,16 +33,15 @@ h1
     color: #fff;
 }
 
-.content2
-{
+.content2{
     width: 1000px;
-    height: 800px;
+    height: 700px;
     margin-left: auto;
     margin-right: auto; 
+    border-bottom: solid 1px;
 }
 
-.picture1
-{
+.picture1{
     float: left;
     background-image: url("img/sadowski_soft.png"); /* Źródło: http://www.stolcad.pl/ */
     background-repeat: no-repeat;
@@ -57,8 +51,7 @@ h1
     margin-top: 110px;
 }
 
-.center2
-{
+.center2{
     font-size: 20px;
     float: left;
     color: #000;
@@ -68,29 +61,25 @@ h1
     text-align: center;
 }
 
-/*----------------------MENU---------------------- */
+/*----------------------MENU----------------------*/
 
-menu
-{
+menu{
     padding: 0;
 }
 
-.menuContainer
-{
+.menuContainer{
     -webkit-transition: background-color 0.5s;
     transition: background-color 0.5s;
 }
 
-ul
-{
+ul{
     list-style-type: none;
     text-align: center;
     padding: 0;
     margin: 0;
 }
 
-ul > li
-{
+ul > li{
     display: inline-block;
     font-size: 40px;
     text-transform: uppercase;
@@ -100,19 +89,16 @@ ul > li
     border-right: solid 1px;
 }
 
-ul > li:first-child
-{
+ul > li:first-child{
     padding-left: 0px;
 }
 
-ul > li:nth-child(3)
-{
+ul > li:nth-child(3){
     border-right: none;
     padding-right: 0px;
 }
 
-ul > li a
-{
+ul > li a{
     text-decoration: none;
     color: #000;
     padding-left: 30px;
@@ -126,8 +112,76 @@ ul > li a:hover
     background-color: #d9d9d9;
 }
 
-footer
-{
+/*----------------------OŚ PROCESÓW----------------------*/
+
+.content3{
+    position: relative;
+    width: 900px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+#titleLine{
+    padding-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.wrapper{
+    margin-left: -200px;
+}
+
+#point1{
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 100%;
+    background-color: #000;
+    -webkit-transition: width 0.5s, height 0.5s, margin-top 0.5s;
+    transition: width 0.5s, height 0.5s, margin-top 0.5s;
+}
+
+#line1{
+    width: 0px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: solid 2px;
+}
+
+#process1{
+    position: absolute;
+    top: 120px;
+    left: 170px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#description1{
+    position: absolute;
+    top: 110px;
+    left: 400px;
+    width: 450px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hide{
+    opacity: 0;
+}
+
+/*----------------------FOOTER----------------------*/
+
+footer{
     position: fixed;
     bottom: 0;
     background-color: #d9d9d9;
@@ -139,8 +193,7 @@ footer
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
-.contact
-{
+.contact{
     width: 600px;
     height: 30px;
     margin-top: 20px;
@@ -150,8 +203,7 @@ footer
     font-weight: 600;
 }
 
-.copy
-{
+.copy{
     width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -159,8 +211,7 @@ footer
     font-weight: 600;
 }
 
-.sticky
-{
+.sticky{
     width: 100%;
     position: fixed;
     left: 0;
@@ -168,20 +219,17 @@ footer
     z-index: 100;
 }
 
-.stickyStyle
-{
+.stickyStyle{
     background-color: #000;
     color: #fff;
     opacity: 0.7;
 }
 
-.stickyStyleList
-{
+.stickyStyleList{
     color: #fff;
 }
 
-.stickyStyleList:hover
-{
+.stickyStyleList:hover{
     background-color: #fff;
     color: #000;
 }

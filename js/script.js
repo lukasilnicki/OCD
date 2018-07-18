@@ -24,7 +24,43 @@ window.onload = function()
 	});
 	});
 
+    /* FUNKCJA ODPOWIADAJĄCA ZA OŚ PROCESÓW */
     
+    $(document).ready(function(){
+        
+        $('#point1').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated fadeIn',
+            classToRemove: 'hide',
+            offset: '35%'
+            });
+         });
+        
+        $('#line1').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated fadeIn',
+            classToRemove: 'hide',
+            offset: '45%'
+            });
+         });
+         
+        $('#process1').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated bounceInLeft',
+            classToRemove: 'hide',
+            offset: '45%'
+            });
+         });
+         
+        $('#description1').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated bounceInRight',
+            classToRemove: 'hide',
+            offset: '49%'
+            });
+         });
+
+    });
     
     
 };
