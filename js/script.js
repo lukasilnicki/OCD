@@ -23,6 +23,17 @@ window.onload = function()
 		stickyNav();
 	});
 	});
+        
+    /* MENU MOBILNE */
+    
+    $(function(){
+		$('#menu').slicknav({
+                    'label': 'MENU',
+                    'closeOnClick': true
+                    
+
+                });
+	});
 
     /* FUNKCJA ODPOWIADAJĄCA ZA OŚ PROCESÓW */
     
