@@ -39,15 +39,15 @@ window.onload = function()
     
     $(document).ready(function(){
         
-        $('#point1').addClass('hide').each(function(){
+        $('.point1').addClass('hide').each(function(){
         $(this).viewportChecker({
             classToAdd: 'show animated fadeIn',
             classToRemove: 'hide',
-            offset: '35%'
+            offset: '30%'
             });
          });
         
-        $('#line1').addClass('hide').each(function(){
+        $('.line1').addClass('hide').each(function(){
         $(this).viewportChecker({
             classToAdd: 'show animated fadeIn',
             classToRemove: 'hide',
@@ -71,6 +71,54 @@ window.onload = function()
             });
          });
 
+        $('#process2').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated bounceInLeft',
+            classToRemove: 'hide',
+            offset: '45%'
+            });
+         });
+         
+        $('#description2').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated bounceInRight',
+            classToRemove: 'hide',
+            offset: '49%'
+            });
+         });
+         
+        $('#process3').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated bounceInLeft',
+            classToRemove: 'hide',
+            offset: '45%'
+            });
+         });
+         
+        $('#description3').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated bounceInRight',
+            classToRemove: 'hide',
+            offset: '49%'
+            });
+         });
+         
+        $('#process4').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated bounceInLeft',
+            classToRemove: 'hide',
+            offset: '35%'
+            });
+         });
+         
+        $('#description4').addClass('hide').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'show animated bounceInRight',
+            classToRemove: 'hide',
+            offset: '39%'
+            });
+         });
+         
     });
     
     

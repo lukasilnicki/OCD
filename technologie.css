@@ -7,6 +7,7 @@ body{
 
 menu{
     padding: 0;
+    height: 40px;
 }
 
 .menuContainer{
@@ -17,17 +18,18 @@ menu{
 ul{
     list-style-type: none;
     text-align: center;
+    white-space: nowrap;
     padding: 0;
     margin: 0;
 }
 
 ul > li{
     display: inline-block;
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
     border-right: solid 1px;
 }
 
@@ -35,7 +37,7 @@ ul > li:first-child{
     padding-left: 0px;
 }
 
-ul > li:nth-child(3){
+ul > li:nth-child(4){
     border-right: none;
     padding-right: 0px;
 }
@@ -79,13 +81,37 @@ ul > li a:hover
                 padding-left: 0px;
                 padding-right: 0px;
                 border-right: none;
+        }
 }
+
+@media only screen and (max-width: 1280px) {
+	/* #menu is the original menu */
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+                position: absolute;
+                z-index: 100;
+                background-color: #fff;
+	}
+        
+        ul > li{
+                display: inline-block;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 0em;
+                padding-left: 0px;
+                padding-right: 0px;
+                border-right: none;
+        }
 }
 
 /*----------------------KOLEJNE SEKCJE----------------------*/
 
 .parallax_section{
-    height: 700px;
+    height: 600px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -208,20 +234,20 @@ h1{
 .content3{
     position: relative;
     width: 900px;
-    height: 700px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
+    margin-bottom: 350px;
 }
 
 @media only screen and (max-width: 680px) {
     .content3{
         width: 100%;
-        height: 500px;
+        height: auto;
         margin-top: 150px;
     }
 }
-
 
 #titleLine{
     padding-top: 100px;
@@ -236,7 +262,7 @@ h1{
     margin-left: -200px;
 }
 
-#point1{
+.point1{
     width: 30px;
     height: 30px;
     margin-left: auto;
@@ -248,9 +274,9 @@ h1{
     transition: width 0.5s, height 0.5s, margin-top 0.5s;
 }
 
-#line1{
+.line1{
     width: 0px;
-    height: 200px;
+    height: 120px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -259,8 +285,35 @@ h1{
 
 #process1{
     position: absolute;
-    top: 120px;
-    left: 170px;
+    top: 0px;
+    right: 600px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#process2{
+    position: absolute;
+    top: 172px;
+    right: 600px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#process3{
+    position: absolute;
+    top: 347px;
+    right: 600px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#process4{
+    position: absolute;
+    top: 523px;
+    right: 600px;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 600;
@@ -268,7 +321,34 @@ h1{
 
 #description1{
     position: absolute;
-    top: 110px;
+    top: -10px;
+    left: 400px;
+    width: 450px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#description2{
+    position: absolute;
+    top: 165px;
+    left: 400px;
+    width: 450px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#description3{
+    position: absolute;
+    top: 330px;
+    left: 400px;
+    width: 450px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#description4{
+    position: absolute;
+    top: 490px;
     left: 400px;
     width: 450px;
     font-size: 15px;
